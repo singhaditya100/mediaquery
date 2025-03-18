@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Boxes</title>
+    <style>
+        .software {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+            padding: 10px;
+        }
+
+       
+        .box {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(144, 224, 97);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+            border-radius: 8px;
+        }
+
+        
+        @media screen and (max-width: 500px) {
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .box {
+                width: 7s0%;
+                background-color: rgb(56, 89, 57); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Software">Media</div> 
+    <div class="container">
+        <div class="box">Media 1</div>
+        <div class="box">Media 2</div>
+        <div class="box">Media 3</div>
+        <div class="box">Media 4</div>
+    </div>
+</body>
+</html>
